@@ -7,7 +7,13 @@ Write a function that takes an array of integers and returns the sum of the inte
 plusOneSum([1, 2, 3, 4]); // 14
 
 */
-
+function plusOneSum(arr){
+    var sumMe = 0;
+    arr = arr.map(function(arr){
+        sumMe += (1 + arr);
+    });
+    return sumMe;
+}
 
 
 /*
